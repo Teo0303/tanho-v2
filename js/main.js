@@ -2,22 +2,6 @@ jQuery(document).ready(function($) {
 
 	'use strict';
 
-      var owl = $("#owl-testimonials");
-
-        owl.owlCarousel({
-          
-          pagination : true,
-          paginationNumbers: false,
-          autoPlay: 6000, //Set AutoPlay to 3 seconds
-          items : 1, //10 items above 1000px browser width
-          itemsDesktop : [1000,1], //5 items between 1000px and 901px
-          itemsDesktopSmall : [900,1], // betweem 900px and 601px
-          itemsTablet: [600,1], //2 items between 600 and 0
-          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-          
-      });
-
-
         var top_header = $('.parallax-content');
         top_header.css({'background-position':'center center'}); // better use CSS
 
@@ -81,6 +65,47 @@ jQuery(document).ready(function($) {
 
 
 
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+        
 
-
+    
 });
+
+$('.first').append('<img src="./img/underline.png" class="underline" style="width:100%; height:5px !important"/>');
+   
+function markActive(that){
+    $('.underline').remove();
+    $('.'+that+'').append('<img src="./img/underline.png" class="underline" style="width:100%; height:5px !important"/>');
+    
+}
+// scroll function
+function scrollToID(id, speed){
+    var offSet = 50;
+    var targetOffset = $(id).offset().top - offSet;
+    var mainNav = $('#main-nav');
+    $('html,body').animate({scrollTop:targetOffset}, speed);
+    if (mainNav.hasClass("open")) {
+        mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+        mainNav.removeClass("open");
+    }
+}
+if (typeof console === "undefined") {
+    console = {
+        log: function() { }
+    };
+}
