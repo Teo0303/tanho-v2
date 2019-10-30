@@ -72,47 +72,79 @@
                         <p style="display: inline-block; font-size: 130%;">+99890 999-99-99</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                </div>
-
-                <div class="col-sm-8 catalog"> 
-                    <div class="col-sm-1" style="margin-top: 3%;">
-                        <div class="col-sm-12" style="float: right; margin:5px ">
-                            <label class="rad-container">
-                              <input type="radio" checked="checked" name="nradio">
-                              <span class="checkmark"></span>
-                            </label>
-                        </div>
-                        <div class="col-sm-12" style="float: right; margin:5px ">
-                            <label class="rad-container">
-                              <input type="radio" name="nradio">
-                              <span class="checkmark"></span>
-                            </label>
-                        </div>
-                        <div class="col-sm-12" style="float: right;margin:5px ">
-                            <label class="rad-container">
-                              <input type="radio" name="nradio">
-                              <span class="checkmark"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-sm-6"> 
-                        <div class="text-content">
-                            <h2 class="starter">Острый кетчуп Tanho</h2>
-                            <p class="startertab">
-                                Захотелось скворчащего ароматного мяса на углях? К нему отлично подойдет Острый кетчуп Tanho.
-                                </br>
-                                </br>
-                                Он приготовлен из натуральных ингредиентов – томатов, трав и специй. Не содержит сахара и крахмала.
-                            </p>
+                <div class="row">
                             
-                        </div>
+                    <div class="col-sm-4">
                     </div>
-                    <div class="col-md-5">
-                        <img src="./img/product.png" class="product-img">
-                    </div> 
-                    <div class="primary-blue-button">
-                                <a href="#" class="scroll-link" data-id="product" style="float: right;width: 30%;">Перейти в каталог</a>
+
+                    <div class="col-sm-8 mvh"> 
+                        <div class="col-sm-1" style="margin-top: 3%;">
+                            <div class="radio-container">
+                                <div class="col-sm-12"  style="float: right; margin:5px " onclick="changeAdd('ketchup')">
+                                    <label class="rad-container">
+                                      <input type="radio" checked="checked" id="firstadd" name="nradio">
+                                      <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-12"  style="float: right; margin:5px " onclick="changeAdd('mayonez')">
+                                    <label class="rad-container">
+                                      <input type="radio" id="secondadd" name="nradio">
+                                      <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-12"  style="float: right;margin:5px " onclick="changeAdd('sous')">
+                                    <label class="rad-container">
+                                      <input type="radio" id="thirdadd" name="nradio">
+                                      <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add">
+                            <div class="add-container">
+                                <div class="add-item">
+                                    <div class="col-sm-6"> 
+                                        <div class="text-content">
+                                            <h2 class="starter">Острый кетчуп Tanho</h2>
+                                            <p class="startertab">
+                                                Захотелось скворчащего ароматного мяса на углях? К нему отлично подойдет Острый кетчуп Tanho.
+                                                </br>
+                                                </br>
+                                                Он приготовлен из натуральных ингредиентов – томатов, трав и специй. Не содержит сахара и крахмала.
+                                            </p>                                
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img src="./img/product.png" class="product-img">
+                                    </div>
+                                    <div class="primary-blue-button">
+                                            <a href="#" class="scroll-link" data-id="product" style="float: right;width: 30%;">Перейти в каталог</a>
+                                    </div>                        
+                                </div>
+                                <div class="add-item">
+                                
+                                    <div class="col-sm-6"> 
+                                        <div class="text-content">
+                                            <h2 class="starter">Tanho «Провансаль»</h2>
+                                            <p class="startertab">
+                                                Майонез Tanho «Провансаль» - это классический вкус французской кухни. 
+                                                </br>
+                                                </br>
+                                                Для его создания мы собрали только натуральные ингредиенты и добавили изюминки с помощью капельки уксуса. 
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img src="./img/1.png" class="product-img" style="width:  60%">
+                                    </div>
+                                    <div class="primary-blue-button">
+                                            <a href="#" class="scroll-link" data-id="product" style="float: right;width: 30%;">Перейти в каталог</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        
                     </div>
                 </div>
             </div>
@@ -156,7 +188,7 @@
                                 </span>
                            </div>                            
                         </div> 
-                        <div class="col-sm-4"> 
+                        <div class="col-sm-4 sortby"> 
                             <div class="form-group m5">
                                 <span style="white-space: nowrap">
                                   <label for="sortby" class="labels">Сортировать по:</label>
@@ -465,7 +497,7 @@
     </div>
 
     <footer>
-        <div class="container">
+        
             <div class="row">
                 <div class="col-sm-10"> 
                         <ul class="nav navbar-nav dark-nav">
@@ -475,16 +507,16 @@
                             <li onclick="markActive('fourth')" class="fourth"><a href="#" class="scroll-link" data-id="map" >Контакты</a></li>
                         </ul>                  
                 </div>
-                <div class="col-sm-2">
-                    <center>
+                <div class="col-sm-2 contact-details">
+
                         <p class="footer-text tel">+99890 999-99-99</p>
                         <p class="footer-text mail">tanho@pochta.uz</p>
                         <p class="footer-text copyright">&copy;copyright 2019</p>
-                    </center>
+
                 </div>
 
             </div>   
-        </div>
+        
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

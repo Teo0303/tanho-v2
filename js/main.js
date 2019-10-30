@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-
+  
 	'use strict';
 
         var top_header = $('.parallax-content');
@@ -82,9 +82,36 @@ jQuery(document).ready(function($) {
             $('#main-nav').toggleClass("open");
         });
         
-
+        autoPlayAdd();
     
 });
+
+
+function changeAdd(type){
+    if(type == 'ketchup'){
+      $('.add-container').animate({'marginTop': '0'});
+    }else{
+      $('.add-container').animate({'marginTop': '-47rem'});
+
+    }
+
+
+}
+
+function autoPlayAdd(){
+      var i =0;
+      setInterval(function () { i++;
+          if (i == 1) {
+            $("#firstadd").attr('checked', true).trigger('click');
+          }
+          else if (i== 2){
+            $("#secondadd").attr('checked', true).trigger('click');
+          }else{
+            i = 0;
+          }
+      }, 2500);   
+
+}
 
 $('.first').append('<img src="./img/underline.png" class="underline" style="width:100%; height:5px !important"/>');
    

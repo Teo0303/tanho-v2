@@ -2,6 +2,7 @@
 	margin-top: 20px;
 	margin-bottom: 0 !important;
 }
+
 .fixedFlag{
 	background-image: url('../img/group.png');
 	height: 136vh;
@@ -25,6 +26,7 @@
 .active-language{
 	color: #D7A948;
 }
+
 .backslash{
 	color: #D7A948;
 }
@@ -66,6 +68,16 @@
 
 /*Catalog section */
 
+.add{
+	width: 80%;	
+	height: 47rem;
+	overflow-y: hidden;
+}
+
+.add-item{
+	max-height: 47rem;
+	display: block; 
+}
 .catalog-header{
 	margin: 0% 2% 1% 25%; 
 	font-style: normal !important;	
@@ -400,6 +412,22 @@
 	.flagcha{
 		display: block;
 	}
+
+    .add{
+    	width: 120%;
+    }
+
+    .mvh{
+    	width: 80%;
+    }
+
+    .add-item{
+    	margin-top: 10%;
+    }
+
+    .product-img{
+    	width: 12rem !important
+    }
 }
 
 
@@ -428,8 +456,12 @@
 		}
 
 		.footer-text{
-			float: right;
-			margin:32px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.contact-details{
+			margin-top: 200px;
 		}
 
 		.product-img{
@@ -446,6 +478,7 @@
     .navbar-nav {
         float: right;
     }
+
 }
 @media (max-width: 500px) {
 	p {
@@ -456,9 +489,30 @@
 		font-size: 5.2vw !important;
 	}
 
+	.contacts-header{
+		font-size: 5rem;
+	}
+
+	#main-nav{
+		position: absolute;
+	    background: #f7c552;
+	    /* float: right; */
+	    right: 10px;
+	    z-index: 11;
+	    width: 15rem;
+	}
+
+	.mvh{
+		margin-top: 5vh;	
+	}
+	.add{
+		width: 80%;
+		margin:auto; 
+	}
+
 	.scroll-link{
 		float: none !important;
-		width: 90% !important;
+		width: 100% !important;
 	}
 
 	.labels{
@@ -466,12 +520,14 @@
 	}
 
 	.dark-nav>li{
-		width: 77%;
+		width: 111%;
+		margin-left: auto;
+		margin-right: auto;
 		text-align: center;
 	}
 
 	.footer-text{
-		text-align: center;; margin: 10px;
+		text-align: center; margin: 10px;
 	}
     .page-section h1 {
         font-size: 3em;
@@ -553,12 +609,28 @@
 	}
 
 	.startertab{
-		font-size: 1.5rem !important;
+		font-size: 90% !important;
 	}
 
 	.starter{
-		font-size: 3.2rem !important;
+		font-size: 155% !important;
 	}
 
+	.product-img{
+		width: 35% !important;
+	}
+
+	.catalog{
+		width: 90%;
+	}
+
+	.radio-container{
+		padding-right: 7%;
+		margin-top: 50px;
+	}
+
+	.sortby{
+		margin-top: 20px;
+	}
 }
 
