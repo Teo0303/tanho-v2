@@ -69,13 +69,12 @@
 /*Catalog section */
 
 .add{
-	width: 80%;	
-	height: 47rem;
+	width: 100%;	
+	max-height: 76vh;
 	overflow-y: hidden;
 }
 
 .add-item{
-	max-height: 47rem;
 	display: block; 
 }
 .catalog-header{
@@ -246,7 +245,9 @@
 	font-family: "PT Sans";
 	font-weight: 700;
 }
-
+.floating{
+	position: absolute;
+}
 .tel{
 	font-size: 20px;
 }
@@ -382,25 +383,7 @@
         float: right;
     }
 
-   /* @media (orientation: landscape) {
-    		
-
-			.content-wrapper{
-				min-height: 500px;
-			}
-			.mCustomScrollbar{
-				height: 70vh !important;
-			}
-
-			#map{
-				margin-top: -120vh;
-			}
-			
-			.contacts-container {
-			    height: 100%;
-			}
-	}
-*/
+  
 }
 
 
@@ -419,10 +402,6 @@
 
     .mvh{
     	width: 80%;
-    }
-
-    .add-item{
-    	margin-top: 10%;
     }
 
     .product-img{
@@ -466,6 +445,10 @@
 
 		.product-img{
 			width: 12rem;
+		}
+
+		.floating{
+			position: absolute;
 		}
 }
 

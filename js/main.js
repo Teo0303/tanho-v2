@@ -98,18 +98,18 @@ function changeAdd(type){
 
 }
 
+var myIndex = 0;
 function autoPlayAdd(){
-      var i =0;
-      setInterval(function () { i++;
-          if (i == 1) {
-            $("#firstadd").attr('checked', true).trigger('click');
-          }
-          else if (i== 2){
-            $("#secondadd").attr('checked', true).trigger('click');
-          }else{
-            i = 0;
-          }
-      }, 2500);   
+      var i;
+      var x = document.getElementsByClassName("add-item");
+      console.log(x);
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(autoPlayAdd, 5000); 
 
 }
 
