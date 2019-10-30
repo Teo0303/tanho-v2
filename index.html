@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Tanho</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/lightbox.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="scrollBar/jquery.mCustomScrollbar.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+     </head>
+
+<body>
+
+    <div class="parallax-content baner-content" id="home">
+      
+            <div class="container" style="padding: 0!important; width: 95% !important">
+                <nav class="navbar navbar-inverse" role="navigation" style="border: none">
+                    <div class="navbar-header">
+                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand scroll-top">
+                            <div class="row">
+                                <center>
+                                    <img src="./img/group.png" style="margin-top: -30%; height: 147vh"> 
+                                </center>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="main-nav" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav ">
+                            <li onclick="markActive('first')" class="first"><a href="#" class="scroll-top">Главная</a></li>
+                            <li onclick="markActive('second')" class="second"><a href="#" class="scroll-link" data-id="product" >Продукция</a></li>
+                            <li onclick="markActive('third')" class="third"><a href="#" class="scroll-link" data-id="about" >О нас</a></li>
+                            <li onclick="markActive('fourth')" class="fourth"><a href="#" class="scroll-link" data-id="map" >Контакты</a></li>
+                        </ul> 
+                    </div>
+                </nav>
+
+            </div>
+            <div class="row"> 
+                <div class="col-sm-12" >
+                    <div style="float: right; margin-right: 4%">
+                        <p class="language active-language">Ru </p>
+                        <span class="language backslash">  /  </span>
+                        <p class="language"> Uz </p>
+                        <span class="language backslash">  /  </span>
+                        <p class="language"> En </p>    
+                    </div>
+                </div>
+                <div class="col-sm-12" >
+                    <div style="float: right;margin-right: 4%">
+                        <img src="./img/phoneframe.png" style="display: inline">
+                        <p style="display: inline-block; font-size: 130%;">+99890 999-99-99</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                </div>
+
+                <div class="col-sm-8 catalog"> 
+                    <div class="col-sm-1" style="margin-top: 3%;">
+                        <div class="col-sm-12" style="float: right; margin:5px ">
+                            <label class="rad-container">
+                              <input type="radio" checked="checked" name="nradio">
+                              <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col-sm-12" style="float: right; margin:5px ">
+                            <label class="rad-container">
+                              <input type="radio" name="nradio">
+                              <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col-sm-12" style="float: right;margin:5px ">
+                            <label class="rad-container">
+                              <input type="radio" name="nradio">
+                              <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6"> 
+                        <div class="text-content">
+                            <h2 class="starter">Острый кетчуп Tanho</h2>
+                            <p class="startertab">
+                                Захотелось скворчащего ароматного мяса на углях? К нему отлично подойдет Острый кетчуп Tanho.
+                                </br>
+                                </br>
+                                Он приготовлен из натуральных ингредиентов – томатов, трав и специй. Не содержит сахара и крахмала.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="./img/product.png" class="product-img">
+                    </div> 
+                    <div class="primary-blue-button">
+                                <a href="#" class="scroll-link" data-id="product" style="float: right;width: 30%;">Перейти в каталог</a>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+    <section id="product">
+        <div class="content-wrapper">
+            <h2 class="catalog-header">
+                Каталог продукции
+            </h2>
+            <div class="row filter">
+                <div class="col-sm-12">
+                    <div class="col-6">
+                        <div class="col sort">
+                            <b> Филтьр:</b>                  
+                        </div>
+                        <div class="col">
+                                <label class="rad-container">По продукции
+                                  <input type="radio" checked="checked" name="radio">
+                                  <span class="checkmark"></span>
+                                </label>
+                        </div> 
+                        <div class="col"> 
+                                <label class="rad-container">По кухням
+                                  <input type="radio" checked="checked" name="radio">
+                                  <span class="checkmark"></span>
+                                </label>
+                        </div>                          
+                    </div>
+                    <div class="row rowNomargin">
+                        
+                        <div class="col-sm-4">
+                            <div class="form-group m5">
+                                <span style="white-space: nowrap">
+                                  <label for="size" class="labels">Продукция:</label>
+                                  <select class="form-control select" id="production">
+                                      <option>1</option>
+                                      <option>2</option>
+                                    </select>
+                                </span>
+                           </div>                            
+                        </div> 
+                        <div class="col-sm-4"> 
+                            <div class="form-group m5">
+                                <span style="white-space: nowrap">
+                                  <label for="sortby" class="labels">Сортировать по:</label>
+                                  <select class="form-control select" id="sortby">
+                                      <option>1</option>
+                                      <option>2</option>
+                                    </select>
+                                </span>
+                           </div>      
+                        </div>                          
+                    </div>                        
+                </div>                                
+            </div>
+
+             <div class="col-sm-12">
+                <div class="demo-x content">
+                    <div class="flex-container">
+
+                        <div class="flex-item">
+                            <div class="inlineflex">
+                                <div class="halfWidth">
+                                    <img src="./img/1.jpg" class="gallery-image">                                      
+                                </div>
+                                
+                                <div class="halfWidth">
+
+                                        <h1 class="card-h1"> Tanho «Шашлычный»</h1> 
+                                        <p class="card-p">
+                                           Кетчуп Tanho «Шашлычный» c душистым перцем и чесноком гармонично дополнит любое блюдо. Особенно, если речь идёт о мясе на гриле или шашлыках. Возьмите этот кетчуп с собой на дачу, и Ваши мясные шедевры станут ещё вкуснее. 
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>масса:</label>
+                                                <h3 class="card-h3">750гр</h3>    
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>Цена(сум):</label>
+                                                <h6 class="card-h3"></h6>    
+                                            </div>
+                                        </div>
+                                        <div class="primary-white-button">
+                                            <a href="#" class="scroll-link" data-id="about">Подробнее</a>
+                                        </div>    
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-item">
+                            <div class="inlineflex">
+                                <div class="halfWidth">
+                                    <img src="./img/Tanho/9.jpg" class="gallery-image">                        
+                                    
+                                </div>
+                                
+                                <div class="halfWidth">
+
+                                     
+                                        <h1 class="card-h1"> Tanho «Шашлычный»</h1> 
+                                        <p class="card-p">
+                                           Кетчуп Tanho «Шашлычный» c душистым перцем и чесноком гармонично дополнит любое блюдо. Особенно, если речь идёт о мясе на гриле или шашлыках. Возьмите этот кетчуп с собой на дачу, и Ваши мясные шедевры станут ещё вкуснее. 
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>масса:</label>
+                                                <h3 class="card-h3">400гр</h3>    
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>Цена(сум):</label>
+                                                <h6 class="card-h3"></h6>    
+                                            </div>
+                                        </div>
+                                        <div class="primary-white-button">
+                                            <a href="#" class="scroll-link" data-id="about">Подробнее</a>
+                                        </div>    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-item">
+                            <div class="inlineflex">
+                                <div class="halfWidth">
+                                    <img src="./img/Tanho/16.jpg" class="gallery-image">                        
+                                    
+                                </div>
+                                
+                                <div class="halfWidth">
+
+                                        <h1 class="card-h1"> «Домашний» кетчуп Tanho</h1> 
+                                        <p class="card-p">
+                                          Отборные фермерские томаты непременно попадают в «Домашний» кетчуп Tanho. Соберите семью за большим столом и удивите их неповторимым вкусом блюд с натуральным соусом из созревших на солнце помидоров.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>масса:</label>
+                                                <h3 class="card-h3">750гр</h3>    
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>Цена(сум):</label>
+                                                <h6 class="card-h3"></h6>    
+                                            </div>
+                                        </div>
+                                        <div class="primary-white-button">
+                                            <a href="#" class="scroll-link" data-id="about">Подробнее</a>
+                                        </div>    
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-item">
+                            <div class="inlineflex">
+                                <div class="halfWidth">
+                                    <img src="./img/Tanho/7.jpg" class="gallery-image">                        
+                                    
+                                </div>
+                                
+                                <div class="halfWidth">
+
+                                        <h1 class="card-h1"> «Домашний» кетчуп Tanho</h1> 
+                                        <p class="card-p">
+                                          Отборные фермерские томаты непременно попадают в «Домашний» кетчуп Tanho. Соберите семью за большим столом и удивите их неповторимым вкусом блюд с натуральным соусом из созревших на солнце помидоров.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>масса:</label>
+                                                <h3 class="card-h3">400гр</h3>    
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>Цена(сум):</label>
+                                                <h6 class="card-h3"></h6>    
+                                            </div>
+                                        </div>
+                                        <div class="primary-white-button">
+                                            <a href="#" class="scroll-link" data-id="about">Подробнее</a>
+                                        </div>    
+
+                                </div>
+                            </div>
+                        </div>  
+                        
+                        <div class="flex-item">
+                            <div class="inlineflex">
+                                <div class="halfWidth">
+                                    <img src="./img/Tanho/11.jpg" class="gallery-image">                        
+                                    
+                                </div>
+                                
+                                <div class="halfWidth">
+
+                                        <h1 class="card-h1">Tanho «Салатный»</h1> 
+                                        <p class="card-p">
+                                          Сбалансированный майонез Tanho «Салатный» - такой нежный и лёгкий благодаря специальному сочетанию продуктов и специй. Он не перебивает вкус овощей и морепродуктов, а потому отлично подходит к салатам и холодным закускам.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>масса:</label>
+                                                <h3 class="card-h3">750гр</h3>    
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>Цена(сум):</label>
+                                                <h6 class="card-h3"></h6>    
+                                            </div>
+                                        </div>
+                                        <div class="primary-white-button">
+                                            <a href="#" class="scroll-link" data-id="about">Подробнее</a>
+                                        </div>    
+
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        <div class="flex-item">
+                            <div class="inlineflex">
+                                <div class="halfWidth">
+                                    <img src="./img/Tanho/15.jpg" class="gallery-image">                        
+                                    
+                                </div>
+                                
+                                <div class="halfWidth">
+
+                                        <h1 class="card-h1">Tanho «Провансаль»</h1> 
+                                        <p class="card-p">
+                                          Майонез Tanho «Провансаль» - это классический вкус французской кухни. Для его создания мы собрали только натуральные ингредиенты и добавили изюминки с помощью капельки уксуса. Придайте неповторимый вкус вашей выпечке вместе с майонезом Tanho «Провансаль».
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>масса:</label>
+                                                <h3 class="card-h3">750гр</h3>    
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>Цена(сум):</label>
+                                                <h6 class="card-h3"></h6>    
+                                            </div>
+                                        </div>
+                                        <div class="primary-white-button">
+                                            <a href="#" class="scroll-link" data-id="about">Подробнее</a>
+                                        </div>    
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-item">
+                            <div class="inlineflex">
+                                <div class="halfWidth">
+                                    <img src="./img/Tanho/4.jpg" class="gallery-image">                        
+                                    
+                                </div>
+                                
+                                <div class="halfWidth">
+
+                                        <h1 class="card-h1">Tanho «Провансаль»</h1> 
+                                        <p class="card-p">
+                                          Майонез Tanho «Провансаль» - это классический вкус французской кухни. Для его создания мы собрали только натуральные ингредиенты и добавили изюминки с помощью капельки уксуса. Придайте неповторимый вкус вашей выпечке вместе с майонезом Tanho «Провансаль».
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>масса:</label>
+                                                <h3 class="card-h3">400гр</h3>    
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>Цена(сум):</label>
+                                                <h6 class="card-h3"></h6>    
+                                            </div>
+                                        </div>
+                                        <div class="primary-white-button">
+                                            <a href="#" class="scroll-link" data-id="about">Подробнее</a>
+                                        </div>    
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-item">
+                            <div class="inlineflex">
+                                <div class="halfWidth">
+                                    <img src="./img/Tanho/19.jpg" class="gallery-image">                        
+                                    
+                                </div>
+                                
+                                <div class="halfWidth">
+
+                                        <h1 class="card-h1">«С лимонным соком»</h1> 
+                                        <p class="card-p">
+                                          Ма1.  Как превратить обычное блюдо в что-то особенное, сродни итальянской пасте? Очень просто – добавить майонез Tanho «С лимонным соком». Так как именно он отлично подходит для спагетти или макарон. Станьте волшебником на кухне вместе с Tanho.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>масса:</label>
+                                                <h3 class="card-h3">750гр</h3>    
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>Цена(сум):</label>
+                                                <h6 class="card-h3"></h6>    
+                                            </div>
+                                        </div>
+                                        <div class="primary-white-button">
+                                            <a href="#" class="scroll-link" data-id="about">Подробнее</a>
+                                        </div>    
+
+                                </div>
+                            </div>
+                        </div>  
+                </div>
+        </div> 
+    </section>
+
+    <div class="tabs-content" id="about">
+
+            <div class="row rowNomargin">
+                <div class="col-sm-12">
+                    <h1 class="Header aboutHeader">О Нас</h1>
+                </div>
+
+                <div class="col-sm-12">
+                    <p class="aboutText">Производство Tanho изготавливает макаронные изделия и соусы. Уникальное для Узбекистана современное итальянское оборувование позволяет поддерживать строгий контроль качестваю</p>
+                    <p class="aboutText">Мы готовим макароны исключительно из высшего сорта муки, произведенной из твердых сортов пщеницыю</p>
+                    <p class="aboutText">Соусы Tanho славятся своим изысканным вкусом благодаря натуральному сырьюю Во время приготовление соусной продукции строго соблядутся стандарты качества и ГОСТы.</p>
+                </div>
+                
+            </div>
+
+    </div>
+    <div id="map" style="position: relative;height: 100vh;">
+
+        <div class="contacts-container">
+            <div class="row flex-container">
+                <div class="col-sm-9">
+                    <h1 class="contacts contacts-header">Контакты</h1>
+                    <h4 class="contacts  contacts-h4">Наш Адрес:</h4>
+                    <p class=" contacts contact-p">Мирабадский район, ул.Амир Темура, дом 1,2 этаж, офис 3</p>
+                    <h4 class=" contacts  contacts-h4">Наш телефон:</h4>
+                    <p class="contacts  contact-p">+99890 999-99-99</p>
+                    <img src="./img/sn-icons.png" class="contacts">
+                </div>
+                <div class="col-sm-2 flag">
+                    <img src="./img/column.png" class="column_image">
+                    <img src="./img/flagcha.png" class="flagcha" style="width: 58px">
+                </div>
+            </div>
+
+            
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.9036197519863!2d69.27716945837966!3d41.310960267551316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQvtGI0LrQtdC90YIsIE9gemJla2lzdG9u!5e0!3m2!1suz!2scz!4v1572246435207!5m2!1suz!2scz" width="100%" height="100%" frameborder="0" style="border:0; margin-top: -70vh;" class="iframe" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10"> 
+                        <ul class="nav navbar-nav dark-nav">
+                            <li onclick="markActive('first')" class="first"><a href="#" class="scroll-top">Главная</a></li>
+                            <li onclick="markActive('second')" class="second"><a href="#" class="scroll-link" data-id="product" >Продукция</a></li>
+                            <li onclick="markActive('third')" class="third"><a href="#" class="scroll-link" data-id="about" >О нас</a></li>
+                            <li onclick="markActive('fourth')" class="fourth"><a href="#" class="scroll-link" data-id="map" >Контакты</a></li>
+                        </ul>                  
+                </div>
+                <div class="col-sm-2">
+                    <center>
+                        <p class="footer-text tel">+99890 999-99-99</p>
+                        <p class="footer-text mail">tanho@pochta.uz</p>
+                        <p class="footer-text copyright">&copy;copyright 2019</p>
+                    </center>
+                </div>
+
+            </div>   
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+     
+        
+    <script src="scrollBar/jquery.mCustomScrollbar.concat.min.js"></script>
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+        
+
+        
+
+    });
+     $('.first').append('<img src="./img/underline.png" class="underline" style="width:100%; height:5px !important"/>');
+    function markActive(that){
+        $('.underline').remove();
+        $('.'+that+'').append('<img src="./img/underline.png" class="underline" style="width:100%; height:5px !important"/>');
+        
+    }
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 50;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+
+    </script>
+    <script>
+        (function($){
+            $(window).on("load",function(){
+                $.mCustomScrollbar.defaults.theme="light-2"; //set "light-2" as the default theme
+
+                $(".demo-x").mCustomScrollbar({
+                    axis:"x",
+                    advanced:{autoExpandHorizontalScroll:true}
+                });
+                
+            });
+        })(jQuery);
+    </script>
+</body>
+</html>
