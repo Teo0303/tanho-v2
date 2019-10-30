@@ -88,28 +88,30 @@ jQuery(document).ready(function($) {
 
 
 function changeAdd(type){
-    if(type == 'ketchup'){
-      $('.add-container').animate({'marginTop': '0'});
-    }else{
-      $('.add-container').animate({'marginTop': '-47rem'});
-
-    }
+   
 
 
 }
 
-var myIndex = 0;
+var Index = 0;
 function autoPlayAdd(){
-      var i;
+       var i;
       var x = document.getElementsByClassName("add-item");
       console.log(x);
       for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+        if ((Index) == 1) {
+            $("#firstadd").attr('checked', true).trigger('click');
+          }
+          else if ((Index)== 2){
+            $("#secondadd").attr('checked', true).trigger('click');
+          }
+        x[i].style.display = "none"; 
       }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}    
-      x[myIndex-1].style.display = "block";  
-      setTimeout(autoPlayAdd, 5000); 
+      Index++;
+      if (Index > x.length) {Index = 1}    
+      x[Index-1].style.display = "block"; 
+      //x[Index-1].checked =  true;
+      setTimeout(autoPlayAdd, 2000); // Change image every 2 seconds  
 
 }
 
