@@ -700,7 +700,7 @@ p {
 
     .contacts-container {
         width: 90vw;
-        height: 70vh;
+        height: 75vh;
         float: none;
         margin-left: 8rem;
         top: 7.8rem;
@@ -798,6 +798,9 @@ p {
         ;
     }
 
+    #about {
+        padding: 70px 0 !important;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -823,6 +826,10 @@ p {
 
     .card-h3 {
         font-size: 1.3em;
+    }
+
+    .card-p {
+        height: 140px;
     }
 
     .gallery-img {
@@ -865,7 +872,7 @@ p {
 
 .swiper-container-vertical>.swiper-pagination-bullets {
     left: 0px;
-    top: 75px !important;
+    top: 102px !important;
 }
 
 
@@ -945,4 +952,8 @@ p {
 
 .filter-select {
     width: 50%
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 6px 0 24px 0 !important;
 }
