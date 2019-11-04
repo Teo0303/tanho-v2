@@ -6,9 +6,13 @@ $.ajax({
 			dataType: "json",
  			async:false,
 			success:function(data){
-					console.log(data)
+					changeLanguage(data);
 			},
 			error:function(xhr){
 				console.log(xhr);
 			} 
-		});
+});
+
+changeLanguage(data){
+	console.log(data);
+}
