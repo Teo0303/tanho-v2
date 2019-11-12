@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
 
       {
         duration: 8000,
-        easing: "linear",
+        easing: "ease-in",
         step: function() {
           $this.text(Math.floor(this.countNum));
         },
@@ -86,7 +86,6 @@ var Index = 0;
 function autoPlayAdd() {
   var i;
   var x = document.getElementsByClassName("add-item");
-  console.log(x);
   for (i = 0; i < x.length; i++) {
     if (Index == 1) {
       $("#firstadd")
