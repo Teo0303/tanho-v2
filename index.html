@@ -18,8 +18,7 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
         <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">        <link rel="stylesheet" href="css/templatemo-style.css">
         <link rel="stylesheet" href="css/lightbox.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/popup.css">
@@ -77,62 +76,7 @@
                     </div>
                 </nav>
                 
-                <div class="hero-slider">
-                    <div class="swiper-container main-banner">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="slide-item">
-                                    <div class="text-content">
-                                        <h2 class="starter">Tanho «Шашлычный»</h2>
-                                        <p class="startertab">
-                                            Кетчуп Tanho «Шашлычный» c душистым перцем и чесноком гармонично дополнит любое блюдо. Особенно, если речь идёт о мясе на гриле или шашлыках. Возьмите этот кетчуп с собой на дачу, и Ваши мясные шедевры станут ещё вкуснее. 
-                                        </p>                                            
-                                    </div>
-                                    <div class="image-content">
-                                        <img src="./img/1.png" class="product-img">
-                                        <div class="primary-blue-button">
-                                            <a href="#" class="scroll-link" onclick="filterSelection('Ketchup')" data-id="product" style="float: right;width: 100%;">Перейти в каталог</a>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                            <div class="swiper-slide">
-                                    <div class="slide-item">
-                                        <div class="text-content">
-                                            <h2 class="starter">«Домашний» кетчуп Tanho</h2>
-                                            <p class="startertab">
-                                                Отборные фермерские томаты непременно попадают в «Домашний» кетчуп Tanho. Соберите семью за большим столом и удивите их неповторимым вкусом блюд с натуральным соусом из созревших на солнце помидоров.
-                                            </p>                                            
-                                        </div>
-                                        <div class="image-content">
-                                            <img src="./img/Tanho/17.png" class="product-img">
-                                            <div class="primary-blue-button">
-                                                <a href="#" class="scroll-link" onclick="filterSelection('Mayonez')" data-id="product" style="float: right;width: 100%;">Перейти в каталог</a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                                <div class="swiper-slide">
-                                        <div class="slide-item">
-                                            <div class="text-content">
-                                                <h2 class="starter">Tanho «Салатный»</h2>
-                                                <p class="startertab">
-                                                    Сбалансированный майонез Tanho «Салатный» - такой нежный и лёгкий благодаря специальному сочетанию продуктов и специй. Он не перебивает вкус овощей и морепродуктов, а потому отлично подходит к салатам и холодным закускам. 
-                                                </p>                                            
-                                            </div>
-                                            <div class="image-content">
-                                                <img src="./img/1.png" class="product-img">
-                                                <div class="primary-blue-button">
-                                                    <a href="#" class="scroll-link" onclick="filterSelection('Gorchitsa')" data-id="product" style="float: right;width: 100%;">Перейти в каталог</a>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </div>
-                        </div>
-                    
-                            
-                        <div class="swiper-pagination"></div>
-                    </div>
+                <div class="hero-slider" id="hero">
                 </div>
 
             </div>
@@ -156,25 +100,25 @@
                         </div>
                         <div class="col-sm-6 col-md-2 radioo">
                                 <label class="rad-container" >Кетчуп
-                                  <input type="radio" checked="checked" name="radio" onclick="filterSelection('Ketchup')">
+                                  <input type="radio" data-type="Ketchup" checked="checked" name="radio" onclick="filterSelection('Ketchup')">
                                   <span class="checkmark"></span>
                                 </label>
                         </div>                   
                         <div class="col-sm-6 col-md-2 radioo">
                                 <label class="rad-container" >Майонез
-                                  <input type="radio" name="radio" onclick="filterSelection('Mayonez')">
+                                  <input type="radio" data-type="Mayonez" name="radio" onclick="filterSelection('Mayonez')">
                                   <span class="checkmark"></span>
                                 </label>
                         </div>                   
                         <div class="col-sm-6 col-md-2 radioo" >
                                 <label class="rad-container" >Горчица
-                                  <input type="radio" name="radio" onclick="filterSelection('Gorchitsa')">
+                                  <input type="radio" data-type="Gorchitsa" name="radio" onclick="filterSelection('Gorchitsa')">
                                   <span class="checkmark"></span>
                                 </label>
                         </div> 
                         <div class="col-sm-6 col-md-2 radioo">
                             <label class="rad-container" >Макароны
-                              <input type="radio" name="radio" onclick="filterSelection('Makaroni')">
+                              <input type="radio" data-type="Makaroni" name="radio" onclick="filterSelection('Makaroni')">
                               <span class="checkmark"></span>
                             </label>
                                       
@@ -184,38 +128,19 @@
             </div>
 
             </a>
-             <div class="col-sm-12" id="product-swiper">
-                <!-- <div class="demo-x content">
-                    <div class="flex-container" id="scroll-container">
-                </div> -->
+             <div id="product-swiper">
             </div>
     </section>
 
-    <ul id="test">
-        
-    </ul>
-
     <div class="tabs-content" id="about">
-
-            <div class="row rowNomargin">
-                <div class="col-sm-12">
-                    <h1 class="Header aboutHeader">О Нас</h1>
-                </div>
-
-                <div class="col-sm-12">
-                    <p class="aboutText">Производство Tanho изготавливает макаронные изделия и соусы. Уникальное для Узбекистана современное итальянское оборувование позволяет поддерживать строгий контроль качестваю</p>
-                    <p class="aboutText">Мы готовим макароны исключительно из высшего сорта муки, произведенной из твердых сортов пщеницыю</p>
-                    <p class="aboutText">Соусы Tanho славятся своим изысканным вкусом благодаря натуральному сырьюю Во время приготовление соусной продукции строго соблядутся стандарты качества и ГОСТы.</p>
-                </div>
-                
-            </div>
-
+        <h1 class="Header aboutHeader" id="about-title">О Нас</h1>
+        <div class="aboutText" id="about-desc"></div>
     </div>
     <div id="map" style="position: relative;height: 100vh;">
 
         <div class="contacts-container">
-            <div class="row flex-container">
-                <div class="col-sm-9">
+            <div class="row flex-container" style="height: 100%;">
+                <div class="col-sm-9" style="padding: 20px 0 20px 20px">
                     <h1 class="contacts contacts-header">Контакты</h1>
                     <h4 class="contacts  contacts-h4">Адрес завода:</h4>
                     <p class=" contacts contact-p">Узбекистан, Ташкентская область, Кибрайский район, поселок Янгиобод, ул. Жасорат 100
@@ -234,7 +159,7 @@
                         
                     </div>
                 </div>
-                <div class="col-sm-2 flag">
+                <div class="col-sm-3 flag">
                     <span class="column_bar"></span>
                     <img src="./img/flagcha.png" class="flagcha" style="width: 58px">
                 </div>
@@ -242,13 +167,13 @@
 
             
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.9036197519863!2d69.27716945837966!3d41.310960267551316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQvtGI0LrQtdC90YIsIE9gemJla2lzdG9u!5e0!3m2!1suz!2scz!4v1572246435207!5m2!1suz!2scz" width="100%" height="100%" frameborder="0" style="border:0; margin-top: -70vh;" class="iframe" allowfullscreen></iframe>
+        <iframe class="big-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.9036197519863!2d69.27716945837966!3d41.310960267551316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQvtGI0LrQtdC90YIsIE9gemJla2lzdG9u!5e0!3m2!1suz!2scz!4v1572246435207!5m2!1suz!2scz" width="100%" height="100%" frameborder="0" style="border:0; margin-top: -70vh;" class="iframe" allowfullscreen></iframe>
     </div>
 
     <footer>
         
-            <div class="row">
-                <div class="col-sm-10"> 
+            <div class="row" >
+                <div class="col-xs-12 col-sm-10 footer-nav"> 
                         <ul class="nav navbar-nav dark-nav">
                             <li onclick="markActive('first')" class="first"><a href="#" class="scroll-top">Главная</a></li>
                             <li onclick="markActive('second')" class="second"><a href="#" class="scroll-link" data-id="product" >Продукция</a></li>
@@ -256,13 +181,14 @@
                             <li onclick="markActive('fourth')" class="fourth"><a href="#" class="scroll-link" data-id="map" >Контакты</a></li>
                         </ul>                  
                 </div>
-                <div class="col-sm-2 contact-details">
+                <div class="col-xs-12 col-sm-2 contact-details">
 
-                        <p class="footer-text tel">8 97 757 91 66</p>
-                        <p class="footer-text mail">info@tanho.uz</p>
-                        <p class="footer-text copyright">&copy;copyright 2019</p>
+                        <p class="footer-text tel"><img src="./img/phone.svg" alt=""> 8 97 757 91 66</p>
+                        <p class="footer-text mail" style="color: #0d0f12"><img src="./img/email.svg"  alt=""> info@tanho.uz</p>
+                        
 
                 </div>
+                <iframe class="min-map col-xs-12 iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.9036197519863!2d69.27716945837966!3d41.310960267551316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQvtGI0LrQtdC90YIsIE9gemJla2lzdG9u!5e0!3m2!1suz!2scz!4v1572246435207!5m2!1suz!2scz" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
 
             </div>   
         
@@ -277,34 +203,30 @@
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/language.js"></script>
     <!-- <script src="scrollBar/jquery.mCustomScrollbar.concat.min.js"></script> -->
     <script>
-        var swiper1 = new Swiper(".main-banner", {
-        direction: "vertical",
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-        },
-        autoplay: {
-            delay: 5000
-        },
-        effect: "coverflow",
-        fadeEffect: {
-            crossFade: true
-        },
-        cubeEffect: {
-            slideShadows: true
-        },
-        flipEffect: {
-            rotate: 10,
-            slideShadows: false
-        },
-        coverflowEffect: {
-            rotate: 120,
-            slideShadows: false
-        }
-        });
+        swiper1 = new Swiper('.main-banner', {
+			direction: 'horizontal',
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: false
+			},
+			autoplay: {
+				delay: 5000
+			},
+			effect: 'coverflow',
+			coverflowEffect: {
+				rotate: 120,
+				slideShadows: false
+			},
+			breakpoints: {
+				640: {
+					direction: 'vertical'
+				}
+			}
+		});
     </script>
         
 
