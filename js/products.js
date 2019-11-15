@@ -1,4 +1,4 @@
-const api = `http://admin.tanho.uz`;
+const api = `http://localhost:1337`;
 
 function createNode(element) {
 	return document.createElement(element);
