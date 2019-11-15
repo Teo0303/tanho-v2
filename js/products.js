@@ -1,4 +1,4 @@
-const api = `admin.tanho.uz`;
+const api = `http://localhost:1337`;
 
 function createNode(element) {
 	return document.createElement(element);
@@ -70,7 +70,7 @@ function trimText(txt) {
 	if (screen <= 500) {
 		return txt.trunc(120, true);
 	}
-	return txt.trunc(210, true);
+	return txt.trunc(120, true);
 }
 
 function markRadioChecked(el) {
