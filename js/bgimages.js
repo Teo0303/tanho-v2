@@ -1,6 +1,6 @@
-const api2 = `http://localhost:1337`;
+const api2 = `http://admin.tanho.uz`;
 
-fetch(api2 + 'bgimages').then((res) => res.json()).then((data) => {
+fetch(api2 + '/bgimages').then((res) => res.json()).then((data) => {
 	let about = document.getElementById('about');
 	let banner = document.getElementById('home');
 	about.style.backgroundImage = `url('${api2 + data[0].bg_image.url}')`;
