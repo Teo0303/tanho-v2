@@ -1,4 +1,7 @@
-const api2 = `http://localhost:1337`;
+const local = `http://localhost:1337`;
+const remote = `http://admin.tanho.uz`;
+
+const api2 = remote;
 
 fetch(api2 + '/bgimages').then((res) => res.json()).then((data) => {
 	let about = document.getElementById('about');

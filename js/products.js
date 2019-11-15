@@ -1,4 +1,7 @@
-const api = `http://localhost:1337`;
+const local = `http://localhost:1337`;
+const remote = `http://admin.tanho.uz`;
+
+const api = remote;
 
 function createNode(element) {
 	return document.createElement(element);
@@ -170,6 +173,8 @@ function filterSelection(el) {
 		.catch((err) => console.log(err));
 }
 
+let swiper1;
+
 fetch(`${api}/sliders`).then((res) => res.json()).then((data) => {
 	let banner = document.getElementById('hero'),
 		bannerContainer = createNode('div');
@@ -205,6 +210,30 @@ fetch(`${api}/sliders`).then((res) => res.json()).then((data) => {
 		append(banner, bannerContainer);
 		append(bannerContainer, bannerPagination);
 
-		// banner.swiper.slideNext();
+		swiper1 = new Swiper('.main-banner', {
+			direction: 'horizontal',
+			init: false,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: false
+			},
+			autoplay: {
+				delay: 5000
+			},
+			effect: 'coverflow',
+			coverflowEffect: {
+				rotate: 120,
+				slideShadows: false
+			},
+			breakpoints: {
+				640: {
+					direction: 'vertical'
+				}
+			}
+		}); // banner.swiper.slideNext();
+
+		setInterval(() => {
+			swiper1.init();
+		}, 500);
 	});
 });
