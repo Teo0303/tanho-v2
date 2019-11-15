@@ -217,21 +217,6 @@
     <script src="js/language.js"></script>
     <!-- <script src="scrollBar/jquery.mCustomScrollbar.concat.min.js"></script> -->
     <script>
-            $(window).load(function() {
-                $(".se-pre-con").fadeIn("slow").fadeOut("slow");
-            });
-                
-            (function($){
-                $(window).on("load",function(){
-                    $.mCustomScrollbar.defaults.theme="light-2"; //set "light-2" as the default theme
-        
-                    $(".demo-x").mCustomScrollbar({
-                        axis:"x",
-                        advanced:{autoExpandHorizontalScroll:true}
-                    });
-                    
-                });
-            })(jQuery);
 
 
             swiper1 = new Swiper('.main-banner', {
@@ -254,7 +239,23 @@
 					direction: 'vertical'
 				}
 			},
-		});
+        });
+        
+        $(window).load(function() {
+                $(".se-pre-con").fadeIn("slow").fadeOut("slow");
+            });
+                
+            (function($){
+                $(window).on("load",function(){
+                    $.mCustomScrollbar.defaults.theme="light-2"; //set "light-2" as the default theme
+        
+                    $(".demo-x").mCustomScrollbar({
+                        axis:"x",
+                        advanced:{autoExpandHorizontalScroll:true}
+                    });
+                    
+                });
+            })(jQuery);
     </script>
         
 </body>

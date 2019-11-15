@@ -199,7 +199,7 @@ fetch(`${api}/sliders`).then((res) => res.json()).then((data) => {
             <div class="image-content">
                 <img src="${api + slider.image.url}" class="product-img">
                 <div class="primary-blue-button">
-                    <a href="#" class="scroll-link" onclick="filterSelection('${slider.type}')" data-id="product" style="float: right;width: 100%;">Перейти в каталог</a>
+                    <a href="#" class="scroll-link" onclick="filterSelection('${slider.type}'); scrollToID('#product', 750);" data-id="product" style="float: right;width: 100%;">Перейти в каталог</a>
                 </div>
             </div>
         </div> 

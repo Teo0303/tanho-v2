@@ -1,5 +1,5 @@
-const local = `http://localhost:1337`;
-const remote = `http://admin.tanho.uz`;
+// const local = `http://localhost:1337`;
+// const remote = `http://admin.tanho.uz`;
 
 const api2 = remote;
 
